@@ -1,0 +1,30 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    {{ title }}!
+  </h1>
+</div>
+<div class="menu">
+  <ul>
+    <li><button (click)= "wybierzOpcie(0)">dane osobowe</button></li>
+    <li><button (click)= "wybierzOpcie(1)">cel zawodowy</button></li>
+    <li><button (click)= "wybierzOpcie(2)">Wyksztalcenie</button></li>
+    <li><button (click)= "wybierzOpcie(3)">Dosjwiadczenie</button></li>
+    <li><button (click)= "wybierzOpcie(4)"> Jezyki</button></li>
+    <li><button (click)= "wybierzOpcie(5)">Certyfikaty</button></li>
+    <li><button (click)= "wybierzOpcie(6)">Hoby</button></li>
+    <li><button (click)= "wybierzOpcie(7)">Gotowe</button></li>
+  </ul>
+
+
+</div>
+
+
+<app-dane-osobowe *ngIf="menu[0]==true"></app-dane-osobowe>
+<app-cel-zawodowy *ngIf="menu[1]==true"></app-cel-zawodowy>
+<app-wyksztalcenie *ngIf="menu[2]==true"></app-wyksztalcenie>
+<app-doswiadczenie *ngIf="menu[3]==true"></app-doswiadczenie>
+<app-jezyki *ngIf="menu[4]==true"></app-jezyki>
+<app-certyfikaty *ngIf="menu[5]==true"></app-certyfikaty>
+<app-hobby *ngIf="menu[6]==true"></app-hobby>
+<app-gotowe *ngIf="menu[7]==true"></app-gotowe>
