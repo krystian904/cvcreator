@@ -30,45 +30,124 @@ export class CvDoumentService {
     this.certyfikaty = [];
     this.hoby = [];
 
-    console.log("stworzono constructor CvDoumentService");
+    console.log ('stworzono constructor CvDoumentService');
 }
 
   daneWyslji(dane: DaneModule) {
     this.dane = dane;
+    this.daneZapisz();
+  }
+
+  // info
+  // https://stackoverflow.com/questions/3357553/how-do-i-store-an-array-in-localstorage
+
+  daneZapisz: void () {
+    localStorage.setItem('dane', JSON.stringify(this.dane));
+  }
+
+  daneOdczyt : DaneModul () {
+    return JSON.parse(localStorage.getItem('dane'));
 
   }
 
-  celWyslji(cel: CelModule )  {
+  celWyslji: void (cel: CelModule )  {
   this.cel = cel;
+  this.celZapisz();
+  }
+
+  celZapisz: void () {
+    localStorage.setItem('cel', JSON.stringify(this.cel));
+  }
+
+  celOdczyt: CelModule () {
+    return JSON.parse(localStorage.getItem('cel'));
 
   }
+
 
   wyksztalcenieWyslji( wyksz: WyksztalcenieModule) {
   this.wyksztalcenie.push(wyksz);
-  console.log(this.wyksztalcenie.length);
+  this.wyksztalcenieZapisz();
+  //console.log(this.wyksztalcenie.length);
+  }
+
+
+  wyksztalcenieZapisz: void () {
+    localStorage.setItem('wyksztalcenie', JSON.stringify(this.wyksztalcenie));
+    console.log(this.wyksztalcenie.length);
+  }
+
+  wyksztalcenieOdczyt: WyksztalcenieModule () {
+    return JSON.parse(localStorage.getItem('wyksztalcenie'));
+
   }
 
   doswiadczenieWyslji( doswiadczenie: DoswiadczenieModule){
       this.doswiadczenie.push(doswiadczenie);
+      this.doswiadczenieZapisz();
       console.log(this.doswiadczenie.length);
 
   }
 
-  jezykWyslji( jezyk: JezykModule){
+  doswiadczenieZapisz: void  () {
+    localStorage.setItem('doswiadczenie', JSON.stringify(this.doswiadczenie));
+    //console.log(this.doswiadczenie.length);
+  }
+
+  doswiadczenieOdczyt: DoswiadczenieModule () {
+    return JSON.parse(localStorage.getItem('doswiadczenie'));
+
+  }
+
+
+  jezykWyslji: void ( jezyk: JezykModule){
     this.jezyki.push(jezyk);
+    this.jezykZapisz();
+    //console.log(this.jezyki.length);
+
+  }
+
+  jezykZapisz: void () {
+    localStorage.setItem('jezyk', JSON.stringify(this.jezyki));
     console.log(this.jezyki.length);
+  }
+
+  jezykOdczyt: JezykModule () {
+    return JSON.parse(localStorage.getItem('jezyk'));
 
   }
-  certyfikatWyslji( certyfikat : CertyfikatModule){
+
+  certyfikatWyslji: void ( certyfikat: CertyfikatModule){
     this.certyfikaty.push(certyfikat);
-    console.log(this.certyfikaty.length);
+    this.certyfikatZapisz ();
+    // console.log(this.certyfikaty.length);
 
   }
 
-  hobyWyslji(hoby: string){
+  certyfikatZapisz: void () {
+    localStorage.setItem('certyfikat', JSON.stringify(this.certyfikaty));
+    console.log(this.certyfikaty.length);
+  }
+
+  certyfikatOdczyt: CertyfikatModule () {
+    return JSON.parse(localStorage.getItem('certyfikat'));
+
+  }
+
+  hobyWyslji: void  (hoby: string) {
     this.hoby.push(new HobyModule(hoby));
+    this.hobyZapisz();
     console.log(this.hoby.length);
   }
 
+  hobyZapisz: void () {
+    localStorage.setItem('hoby', JSON.stringify(this.hoby));
+    console.log(this.hoby.length);
+  }
+
+  hobytOdczyt: HobyModule () {
+    return JSON.parse(localStorage.getItem('hoby'));
+
+  }
 
 }

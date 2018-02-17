@@ -1,2 +1,47 @@
 <p>dziala gotowe</p>
-<p *ngFor="let rekord of dane">{{rekord.nazwa}} </p>
+
+  <h2>dane osobowe :</h2>
+  <p> Imie Nazwisko: {{dane.imie}} </p>
+  <p> Adres: {{dane.adres}} </p>
+  <p> Email: {{dane.email}} </p>
+  <p> Telefon: {{dane.telefon}} </p>
+
+
+  certyfikatWyslji( certyfikat: CertyfikatModule){
+    this.certyfikaty.push(certyfikat);
+    this.certyfikatZapisz ();
+  <h2>cel</h2>
+  <p> cel: {{cel.text}} </p>
+
+  <h2>wyksztalcenie :</h2>
+  <div class="wyksztalcenie" *ngFor="let rekord of wyksztalcenie">
+    <p> dataZaczecia : {{rekord.dataZaczecia}}</p>
+    <p> dataZakonczenia : {{rekord.dataSkonczenia}}</p>
+    <p> nazwaSzkoly : {{rekord.nazwaSzkoly}}</p>
+
+  </div>
+
+ <h2>doswiadczenie :</h2>
+ <div class="doswiadczenie" *ngFor="let rekord of doswiadczenie">
+   <p> dataZaczecia : {{rekord.dataZaczecia}}</p>
+   <p> dataZakonczenia : {{rekord.dataSkonczenia}}</p>
+   <p> nazwa stanowiska : {{rekord.opis}}</p>
+
+ </div>
+
+ <h2>jezyki :</h2>
+ <div class="doswiadczenie" *ngFor="let rekord of jezyki">
+   <p> poziom : {{rekord.poziom}}</p>
+   <p> jezyk : {{rekord.nazwaJezyka}}</p>
+
+
+ </div>
+
+ <h2>certyfikaty :</h2>
+ <div class="doswiadczenie" *ngFor="let rekord of certyfikaty">
+   <p> nr : {{rekord.nr}}</p>
+   <p> jezyk : {{rekord.nazwa}}</p>
+  <p> miesce zdania certyfikatu : {{rekord.gdzie}}</p>
+  <p> data zdania certyfikatu : {{rekord.data}}</p>
+
+ </div>

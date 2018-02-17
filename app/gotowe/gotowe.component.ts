@@ -27,19 +27,20 @@ export class GotoweComponent implements OnInit {
 
   constructor(private service: CvDoumentService) {
 
-
 }
 
   ngOnInit() {
-    //this.dane = this.service.dane;
-    this.cel = this.service.cel;
-    this.wyksztalcenie = this.service.wyksztalcenie;
-    this.doswiadczenie = this.service.doswiadczenie;
-    this.jezyki = this.service.jezyki;
-    this.certyfikaty = this.service.certyfikaty;
-    this.hoby = this.service.hoby;
+    this.dane = this.service.daneOdczyt();
+    this.cel = this.service.celOdczyt();
+    this.wyksztalcenie = this.service.wyksztalcenieOdczyt();
+    this.doswiadczenie = this.service.doswiadczenieOdczyt();
+    this.jezyki = this.service.jezykOdczyt();
+    this.certyfikaty = this.service.certyfikatOdczyt();
+    this.hoby = this.service.hobytOdczyt();
 
-    
+    console.log("aktualizacia gotowe");
+
+
 
 
   }
