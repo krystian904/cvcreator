@@ -1,4 +1,4 @@
-import {DoswiadczenieModule} '../models/doswiadczenie/doswiadczenie.module';
+import {DoswiadczenieModule} from '../models/doswiadczenie/doswiadczenie.module';
 import {CvDoumentService} from '../cv-doument.service';
 import { Component, OnInit } from '@angular/core';
 

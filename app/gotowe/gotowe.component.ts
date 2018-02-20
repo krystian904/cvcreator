@@ -1,7 +1,7 @@
 import {DaneModule} from '../models/dane/dane.module';
 import {CelModule} from '../models/cel/cel.module';
 import {WyksztalcenieModule} from '../models/wyksztalcenie/wyksztalcenie.module';
-import {DoswiadczenieModule} '../models/doswiadczenie/doswiadczenie.module';
+import {DoswiadczenieModule} from '../models/doswiadczenie/doswiadczenie.module';
 import {JezykModule} from '../models/jezyk/jezyk.module';
 import {CertyfikatModule} from '../models/certyfikat/certyfikat.module';
 import {HobyModule} from '../models/hoby/hoby.module';
