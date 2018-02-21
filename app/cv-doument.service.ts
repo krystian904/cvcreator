@@ -41,11 +41,11 @@ export class CvDoumentService {
   // info
   // https://stackoverflow.com/questions/3357553/how-do-i-store-an-array-in-localstorage
 
-  daneZapisz: void () {
+  daneZapisz(): void  {
     localStorage.setItem('dane', JSON.stringify(this.dane));
   }
 
-  daneOdczyt : DaneModul () {
+  daneOdczyt() : DaneModul  {
     return JSON.parse(localStorage.getItem('dane'));
 
   }
@@ -91,7 +91,7 @@ export class CvDoumentService {
 
   doswiadczenieZapisz (): void   {
     localStorage.setItem('doswiadczenie', JSON.stringify(this.doswiadczenie));
-    //console.log(this.doswiadczenie.length);
+    // console.log(this.doswiadczenie.length);
   }
 
   doswiadczenieOdczyt (): DoswiadczenieModule  {
@@ -117,7 +117,7 @@ export class CvDoumentService {
 
   }
 
-  certyfikatWyslj( certyfikat: CertyfikatModulei: void ){
+  certyfikatWyslj( certyfikat: CertyfikatModulei): void{
     this.certyfikaty.push(certyfikat);
     this.certyfikatZapisz ();
     // console.log(this.certyfikaty.length);
@@ -140,12 +140,12 @@ export class CvDoumentService {
     console.log(this.hoby.length);
   }
 
-  hobyZapisz: void () {
+  hobyZapisz(): void  {
     localStorage.setItem('hoby', JSON.stringify(this.hoby));
     console.log(this.hoby.length);
   }
 
-  hobytOdczyt: HobyModule () {
+  hobytOdczyt(): HobyModule  {
     return JSON.parse(localStorage.getItem('hoby'));
 
   }

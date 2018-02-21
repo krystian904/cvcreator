@@ -1,12 +1,13 @@
-ERROR in ./src/app/cv-doument.service.ts
-Module parse failed: Unexpected token (92:13)
-You may need an appropriate loader to handle this file type.
-|     };
-|     CvDoumentService.prototype.certyfikatWyslj = function (certyfikat, ) {
-|         if ( === void 0) {  = void ; }
-|         this.certyfikaty.push(certyfikat);
-|         this.certyfikatZapisz();
- @ ./src/app/app.component.ts 13:27-58
- @ ./src/app/app.module.ts
- @ ./src/main.ts
- @ multi webpack-dev-server/client?http://0.0.0.0:0 ./src/main.ts
+ERROR in src/app/certyfikaty/certyfikaty.component.ts(19,18): error TS2551: Property 'certyfikatWyslji' does not exist on type 'CvDoumentService'. Did you mean 'certyfikatWyslj'?
+src/app/cv-doument.service.ts(4,35): error TS2691: An import path cannot end with a '.ts' extension. Consider importing './models/doswiadczenie/doswiadczenie.module' instead.
+src/app/cv-doument.service.ts(48,18): error TS2304: Cannot find name 'DaneModul'.
+src/app/cv-doument.service.ts(120,32): error TS2304: Cannot find name 'CertyfikatModulei'.
+src/app/doswiadczenie/doswiadczenie.component.ts(22,7): error TS2554: Expected 1 arguments, but got 0.
+src/app/gotowe/gotowe.component.ts(35,5): error TS2322: Type 'WyksztalcenieModule' is not assignable to type 'WyksztalcenieModule[]'.
+  Property 'includes' is missing in type 'WyksztalcenieModule'.
+src/app/gotowe/gotowe.component.ts(37,5): error TS2322: Type 'JezykModule' is not assignable to type 'JezykModule[]'.
+  Property 'includes' is missing in type 'JezykModule'.
+src/app/gotowe/gotowe.component.ts(38,5): error TS2322: Type 'CertyfikatModule' is not assignable to type 'CertyfikatModule[]'.
+  Property 'includes' is missing in type 'CertyfikatModule'.
+src/app/gotowe/gotowe.component.ts(39,5): error TS2322: Type 'HobyModule' is not assignable to type 'HobyModule[]'.
+  Property 'includes' is missing in type 'HobyModule'.
