@@ -50,16 +50,16 @@ export class CvDoumentService {
 
   }
 
-  celWyslji: void (cel: CelModule )  {
+  celWyslji(cel: CelModule ): void   {
   this.cel = cel;
   this.celZapisz();
   }
 
-  celZapisz: void () {
+  celZapisz (): void  {
     localStorage.setItem('cel', JSON.stringify(this.cel));
   }
 
-  celOdczyt: CelModule () {
+  celOdczyt(): CelModule  {
     return JSON.parse(localStorage.getItem('cel'));
 
   }
@@ -72,12 +72,12 @@ export class CvDoumentService {
   }
 
 
-  wyksztalcenieZapisz: void () {
+  wyksztalcenieZapisz(): void  {
     localStorage.setItem('wyksztalcenie', JSON.stringify(this.wyksztalcenie));
     console.log(this.wyksztalcenie.length);
   }
 
-  wyksztalcenieOdczyt: WyksztalcenieModule () {
+  wyksztalcenieOdczyt(): WyksztalcenieModule  {
     return JSON.parse(localStorage.getItem('wyksztalcenie'));
 
   }
@@ -89,52 +89,52 @@ export class CvDoumentService {
 
   }
 
-  doswiadczenieZapisz: void  () {
+  doswiadczenieZapisz (): void   {
     localStorage.setItem('doswiadczenie', JSON.stringify(this.doswiadczenie));
     //console.log(this.doswiadczenie.length);
   }
 
-  doswiadczenieOdczyt: DoswiadczenieModule () {
+  doswiadczenieOdczyt (): DoswiadczenieModule  {
     return JSON.parse(localStorage.getItem('doswiadczenie'));
 
   }
 
 
-  jezykWyslji: void ( jezyk: JezykModule){
+  jezykWyslji ( jezyk: JezykModule): void {
     this.jezyki.push(jezyk);
     this.jezykZapisz();
     //console.log(this.jezyki.length);
 
   }
 
-  jezykZapisz: void () {
+  jezykZapisz(): void  {
     localStorage.setItem('jezyk', JSON.stringify(this.jezyki));
     console.log(this.jezyki.length);
   }
 
-  jezykOdczyt: JezykModule () {
+  jezykOdczyt (): JezykModule {
     return JSON.parse(localStorage.getItem('jezyk'));
 
   }
 
-  certyfikatWyslji: void ( certyfikat: CertyfikatModule){
+  certyfikatWyslj( certyfikat: CertyfikatModulei: void ){
     this.certyfikaty.push(certyfikat);
     this.certyfikatZapisz ();
     // console.log(this.certyfikaty.length);
 
   }
 
-  certyfikatZapisz: void () {
+  certyfikatZapisz () : void {
     localStorage.setItem('certyfikat', JSON.stringify(this.certyfikaty));
     console.log(this.certyfikaty.length);
   }
 
-  certyfikatOdczyt: CertyfikatModule () {
+  certyfikatOdczyt(): CertyfikatModule  {
     return JSON.parse(localStorage.getItem('certyfikat'));
 
   }
 
-  hobyWyslji: void  (hoby: string) {
+  hobyWyslji(hoby: string): void   {
     this.hoby.push(new HobyModule(hoby));
     this.hobyZapisz();
     console.log(this.hoby.length);
