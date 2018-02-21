@@ -1,49 +1,12 @@
-[k@k-pc CvCreator]$ ng serve --open
-** NG Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **
- 10% building modules 0/1 modules 1 active ...k/angular/start/CvCreator/src/main 10% building modules 1/2 modules 1 active ...ular/start/CvCreator/src/polyfills 10% building modules 2/3 modules 1 active ...ngular/start/CvCreator/src/styles. 10% building modules 3/4 modules 1 active ...k/angular/start/CvCreator/src/main 10% building modules 3/5 modules 2 active ...ular/start/CvCreator/src/polyfills 10% building modules 4/5 modules 1 active ...ular/start/CvCreator/src/polyfills 10% building modules 5/6 modules 1 active ...rver/client/index.js?http://0.0.0. 10% building modules 5/7 modules 2 active ...ngular/start/CvCreator/src/styles. 10% building modules 6/7 modules 1 active ...rver/client/index.js?http://0.0.0. 10% building modules 6/8 modules 2 active ...ngular/start/CvCreator/src/styles. 10% building modules 7/8 modules 1 active ...ngular/start/CvCreator/src/styles. 10% building modules 7/9 modules 2 active ...ode_modules/style-loader/addStyles 10% building modules 8/9 modules 1 active ...ngular/start/CvCreator/src/styles. 10% building modules 8/10 modules 2 active ...s/webpack-dev-server/client/socke 10% building modules 8/11 modules 3 active .../webpack-dev-server/client/overla 10% building modules 8/12 modules 4 active ...art/CvCreator/node_modules/url/ur 11% building modules 9/12 modules 3 active ...art/CvCreator/node_modules/url/ur 11% building modules 10/12 modules 2 active ...art/CvCreator/node_modules/url/u 11% building modules 10/13 modules 3 active .../webpack/hot nonrecursive /^\.\/ 11% building modules 10/14 modules 4 active ...de_modules/css-loader/lib/css-ba 11% building modules 11/14 modules 3 active ...de_modules/css-loader/lib/css-ba 11% building modules 12/14 modules 2 active ...de_modules/css-loader/lib/css-ba 11% building modules 13/14 modules 1 active ...de_modules/css-loader/lib/css-ba 11% building modules 13/15 modules 2 active ...r/node_modules/webpack/hot/emitt 11% building modules 13/16 modules 3 active ...ator/node_modules/strip-ansi/ind 11% building modules 14/16 modules 2 active ...ator/node_modules/strip-ansi/ind 11% building modules 14/17 modules 3 active ...eator/node_modules/webpack/hot/l 11% building modules 14/18 modules 4 active ...rt/CvCreator/node_modules/url/ut 11% building modules 14/19 modules 5 active ...tor/node_modules/punycode/punyco 11% building modules 14/20 modules 6 active ...node_modules/querystring-es3/ind 11% building modules 15/20 modules 5 active ...node_modules/querystring-es3/ind 11% building modules 15/21 modules 6 active ...node_modules/loglevel/lib/loglev 11% building modules 16/21 modules 5 active ...node_modules/loglevel/lib/loglev 12% building modules 17/21 modules 4 active ...node_modules/loglevel/lib/loglev 12% building modules 18/21 modules 3 active ...node_modules/loglevel/lib/loglev 12% building modules 19/21 modules 2 active ...eator/node_modules/webpack/hot/log.jswebpack: wait until bundle finished: /
- 12% building modules 19/22 modules 3 active ..._modules/sockjs-client/dist/sock 12% building modules 20/22 modules 2 active ..._modules/sockjs-client/dist/sock 12% building modules 21/22 modules 1 active ..._modules/sockjs-client/dist/sock 12% building modules 21/23 modules 2 active ...ode_modules/webpack/buildin/modu 12% building modules 21/24 modules 3 active ...ode_modules/webpack/buildin/glob 12% building modules 21/25 modules 4 active ...ode_modules/querystring-es3/deco 12% building modules 21/26 modules 5 active ...ode_modules/querystring-es3/enco 12% building modules 21/27 modules 6 active ...eator/node_modules/ansi-html/ind 12% building modules 21/28 modules 7 active ...Creator/node_modules/events/even 12% building modules 22/28 modules 6 active ...Creator/node_modules/events/even 12% building modules 23/28 modules 5 active ...Creator/node_modules/events/even 12% building modules 24/28 modules 4 active ...Creator/node_modules/events/even 13% building modules 25/28 modules 3 active ...Creator/node_modules/events/even 13% building modules 26/28 modules 2 active ...Creator/node_modules/events/even 13% building modules 27/28 modules 1 active ...Creator/node_modules/events/even 13% building modules 28/29 modules 1 active ...ator/node_modules/ansi-regex/ind 13% building modules 28/30 modules 2 active ...r/node_modules/html-entities/ind 13% building modules 29/30 modules 1 active ...r/node_modules/html-entities/ind 13% building modules 30/31 modules 1 active ...s/html-entities/lib/html5-entiti 13% building modules 30/32 modules 2 active ...s/html-entities/lib/html4-entiti 13% building modules 30/33 modules 3 active ...les/html-entities/lib/xml-entiti 13% building modules 31/33 modules 2 active ...s/html-entities/lib/html4-entiti 13% building modules 32/33 modules 1 active ...s/html-entities/lib/html5-entitiDate: 2018-02-20T19:18:08.995Z              
-Hash: 35ace9814f52f6a76cbd
-Time: 5917ms
-chunk {inline} inline.bundle.js (inline) 5.79 kB [entry] [rendered]
-chunk {main} main.bundle.js (main) 2.93 kB [initial] [rendered]
-chunk {polyfills} polyfills.bundle.js (polyfills) 636 bytes [initial] [rendered]
-chunk {styles} styles.bundle.js (styles) 33.8 kB [initial] [rendered]
-chunk {vendor} vendor.bundle.js (vendor) 853 kB [initial] [rendered]
-
-ERROR in src/app/cv-doument.service.ts(44,20): error TS1005: '=' expected.
-src/app/cv-doument.service.ts(44,23): error TS1005: '=>' expected.
-src/app/cv-doument.service.ts(48,26): error TS1005: '=' expected.
-src/app/cv-doument.service.ts(48,29): error TS1005: '=>' expected.
-src/app/cv-doument.service.ts(53,19): error TS1005: '=' expected.
-src/app/cv-doument.service.ts(53,38): error TS1005: '=>' expected.
-src/app/cv-doument.service.ts(58,19): error TS1005: '=' expected.
-src/app/cv-doument.service.ts(58,22): error TS1005: '=>' expected.
-src/app/cv-doument.service.ts(62,24): error TS1005: '=' expected.
-src/app/cv-doument.service.ts(62,27): error TS1005: '=>' expected.
-src/app/cv-doument.service.ts(75,29): error TS1005: '=' expected.
-src/app/cv-doument.service.ts(75,32): error TS1005: '=>' expected.
-src/app/cv-doument.service.ts(80,44): error TS1005: '=' expected.
-src/app/cv-doument.service.ts(80,47): error TS1005: '=>' expected.
-src/app/cv-doument.service.ts(92,30): error TS1005: '=' expected.
-src/app/cv-doument.service.ts(92,33): error TS1005: '=>' expected.
-src/app/cv-doument.service.ts(97,44): error TS1005: '=' expected.
-src/app/cv-doument.service.ts(97,47): error TS1005: '=>' expected.
-src/app/cv-doument.service.ts(103,21): error TS1005: '=' expected.
-src/app/cv-doument.service.ts(103,42): error TS1005: '=>' expected.
-src/app/cv-doument.service.ts(110,21): error TS1005: '=' expected.
-src/app/cv-doument.service.ts(110,24): error TS1005: '=>' expected.
-src/app/cv-doument.service.ts(115,28): error TS1005: '=' expected.
-src/app/cv-doument.service.ts(115,31): error TS1005: '=>' expected.
-src/app/cv-doument.service.ts(120,26): error TS1005: '=' expected.
-src/app/cv-doument.service.ts(120,57): error TS1005: '=>' expected.
-src/app/cv-doument.service.ts(127,26): error TS1005: '=' expected.
-src/app/cv-doument.service.ts(127,29): error TS1005: '=>' expected.
-src/app/cv-doument.service.ts(132,38): error TS1005: '=' expected.
-src/app/cv-doument.service.ts(132,41): error TS1005: '=>' expected.
-src/app/cv-doument.service.ts(137,21): error TS1005: '=' expected.
-src/app/cv-doument.service.ts(137,36): error TS1005: '=>' expected.
-src/app/cv-doument.service.ts(143,20): error TS1005: '=' expected.
-src/app/cv-doument.service.ts(143,23): error TS1005: '=>' expected.
-src/app/cv-doument.service.ts(148,27): error TS1005: '=' expected.
-src/app/cv-doument.service.ts(148,30): error TS1005: '=>' expected.
-
+ERROR in ./src/app/cv-doument.service.ts
+Module parse failed: Unexpected token (92:13)
+You may need an appropriate loader to handle this file type.
+|     };
+|     CvDoumentService.prototype.certyfikatWyslj = function (certyfikat, ) {
+|         if ( === void 0) {  = void ; }
+|         this.certyfikaty.push(certyfikat);
+|         this.certyfikatZapisz();
+ @ ./src/app/app.component.ts 13:27-58
+ @ ./src/app/app.module.ts
+ @ ./src/main.ts
+ @ multi webpack-dev-server/client?http://0.0.0.0:0 ./src/main.ts
