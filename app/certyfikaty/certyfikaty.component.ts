@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {CvDoumentService} from '../cv-doument.service';
-import { CertyfikatModule } from '../models/certyfikat/certyfikat.module'
+import { CertyfikatModule } from '../models/certyfikat/certyfikat.module';
 
 @Component({
   selector: 'app-certyfikaty',
@@ -15,8 +15,8 @@ export class CertyfikatyComponent implements OnInit {
   ngOnInit() {
   }
 
-  wyslji(nr: string , nazwa: string , gdzie: string , data: string){
-    this.service.certyfikatWyslji(new CertyfikatModule(nr , nazwa , gdzie , data));
+  wyslji(nr: string , nazwa: string , gdzie: string , data: string) {
+    this.service.certyfikatWyslj(new CertyfikatModule(nr , nazwa , gdzie , data));
 
   }
 

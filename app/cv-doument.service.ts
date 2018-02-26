@@ -1,7 +1,7 @@
 import {DaneModule} from './models/dane/dane.module';
 import {CelModule} from './models/cel/cel.module';
 import {WyksztalcenieModule} from './models/wyksztalcenie/wyksztalcenie.module';
-import {DoswiadczenieModule} from './models/doswiadczenie/doswiadczenie.module.ts';
+import {DoswiadczenieModule} from './models/doswiadczenie/doswiadczenie.module';
 import {JezykModule} from './models/jezyk/jezyk.module';
 import {CertyfikatModule} from './models/certyfikat/certyfikat.module';
 import {HobyModule} from './models/hoby/hoby.module';
@@ -45,8 +45,17 @@ export class CvDoumentService {
     localStorage.setItem('dane', JSON.stringify(this.dane));
   }
 
-  daneOdczyt() : DaneModul  {
+  daneOdczyt(): DaneModule  {
     return JSON.parse(localStorage.getItem('dane'));
+
+  }
+
+  daneOdczytPrawda(): boolean{
+    if(localStorage.getItem('dane')== null){
+      return false;
+    }else {
+      return true;
+    }
 
   }
 
@@ -64,11 +73,20 @@ export class CvDoumentService {
 
   }
 
+  celOdczytPrawda(): boolean{
+    if(localStorage.getItem('cel')== null){
+      return false;
+    }else {
+      return true;
+    }
+
+  }
+
 
   wyksztalcenieWyslji( wyksz: WyksztalcenieModule) {
   this.wyksztalcenie.push(wyksz);
   this.wyksztalcenieZapisz();
-  //console.log(this.wyksztalcenie.length);
+  // console.log(this.wyksztalcenie.length);
   }
 
 
@@ -82,7 +100,16 @@ export class CvDoumentService {
 
   }
 
-  doswiadczenieWyslji( doswiadczenie: DoswiadczenieModule){
+  wyksztalcenieOdczytPrawda(): boolean{
+    if(localStorage.getItem('wyksztalcenie')== null){
+      return false;
+    }else {
+      return true;
+    }
+
+  }
+
+  doswiadczenieWyslji( doswiadczenie: DoswiadczenieModule) {
       this.doswiadczenie.push(doswiadczenie);
       this.doswiadczenieZapisz();
       console.log(this.doswiadczenie.length);
@@ -99,11 +126,18 @@ export class CvDoumentService {
 
   }
 
+  doswiadczenieOdczytPrawda(): boolean{
+    if(localStorage.getItem('doswiadczenie')== null){
+      return false;
+    }else {
+      return true;
+    }
 
+  }
   jezykWyslji ( jezyk: JezykModule): void {
     this.jezyki.push(jezyk);
     this.jezykZapisz();
-    //console.log(this.jezyki.length);
+    // console.log(this.jezyki.length);
 
   }
 
@@ -117,20 +151,38 @@ export class CvDoumentService {
 
   }
 
-  certyfikatWyslj( certyfikat: CertyfikatModulei): void{
+  jezykOdczytPrawda(): boolean{
+    if(localStorage.getItem('jezyk')== null){
+      return false;
+    }else {
+      return true;
+    }
+
+  }
+
+  certyfikatWyslj( certyfikat: CertyfikatModule): void {
     this.certyfikaty.push(certyfikat);
     this.certyfikatZapisz ();
     // console.log(this.certyfikaty.length);
 
   }
 
-  certyfikatZapisz () : void {
+  certyfikatZapisz (): void {
     localStorage.setItem('certyfikat', JSON.stringify(this.certyfikaty));
     console.log(this.certyfikaty.length);
   }
 
   certyfikatOdczyt(): CertyfikatModule  {
     return JSON.parse(localStorage.getItem('certyfikat'));
+
+  }
+
+  certyfikatOdczytPrawda(): boolean{
+    if(localStorage.getItem('certyfikat')== null){
+      return false;
+    }else {
+      return true;
+    }
 
   }
 
@@ -147,6 +199,15 @@ export class CvDoumentService {
 
   hobytOdczyt(): HobyModule  {
     return JSON.parse(localStorage.getItem('hoby'));
+
+  }
+
+  hobytOdczytPrawda(): boolean{
+    if(localStorage.getItem('hoby')== null){
+      return false;
+    }else {
+      return true;
+    }
 
   }
 

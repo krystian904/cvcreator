@@ -18,9 +18,8 @@ export class DoswiadczenieComponent implements OnInit {
   ngOnInit() {
   }
 
-  wyslji(dataStart: string , dataKoniec: string, opis: string){
-      this.service.doswiadczenieWyslji();
-
+  wyslji(dataStart: string , dataKoniec: string, opis: string) {
+      this.service.doswiadczenieWyslji(new DoswiadczenieModule(dataStart , dataKoniec , opis));
   }
 
 }

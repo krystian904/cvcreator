@@ -6,10 +6,6 @@
   <p> Email: {{dane.email}} </p>
   <p> Telefon: {{dane.telefon}} </p>
 
-
-  certyfikatWyslji( certyfikat: CertyfikatModule){
-    this.certyfikaty.push(certyfikat);
-    this.certyfikatZapisz ();
   <h2>cel</h2>
   <p> cel: {{cel.text}} </p>
 
@@ -41,7 +37,7 @@
  <div class="doswiadczenie" *ngFor="let rekord of certyfikaty">
    <p> nr : {{rekord.nr}}</p>
    <p> jezyk : {{rekord.nazwa}}</p>
-  <p> miesce zdania certyfikatu : {{rekord.gdzie}}</p>
-  <p> data zdania certyfikatu : {{rekord.data}}</p>
+  <p> miesce zdania certyfikatu : {{rekord.gdzie}} </p>
+  <p> data zdania certyfikatu : {{rekord.data}} </p>
 
  </div>
