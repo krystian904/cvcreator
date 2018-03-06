@@ -1,13 +1,6 @@
-ERROR in src/app/certyfikaty/certyfikaty.component.ts(19,18): error TS2551: Property 'certyfikatWyslji' does not exist on type 'CvDoumentService'. Did you mean 'certyfikatWyslj'?
-src/app/cv-doument.service.ts(4,35): error TS2691: An import path cannot end with a '.ts' extension. Consider importing './models/doswiadczenie/doswiadczenie.module' instead.
-src/app/cv-doument.service.ts(48,18): error TS2304: Cannot find name 'DaneModul'.
-src/app/cv-doument.service.ts(120,32): error TS2304: Cannot find name 'CertyfikatModulei'.
-src/app/doswiadczenie/doswiadczenie.component.ts(22,7): error TS2554: Expected 1 arguments, but got 0.
-src/app/gotowe/gotowe.component.ts(35,5): error TS2322: Type 'WyksztalcenieModule' is not assignable to type 'WyksztalcenieModule[]'.
-  Property 'includes' is missing in type 'WyksztalcenieModule'.
-src/app/gotowe/gotowe.component.ts(37,5): error TS2322: Type 'JezykModule' is not assignable to type 'JezykModule[]'.
-  Property 'includes' is missing in type 'JezykModule'.
-src/app/gotowe/gotowe.component.ts(38,5): error TS2322: Type 'CertyfikatModule' is not assignable to type 'CertyfikatModule[]'.
-  Property 'includes' is missing in type 'CertyfikatModule'.
-src/app/gotowe/gotowe.component.ts(39,5): error TS2322: Type 'HobyModule' is not assignable to type 'HobyModule[]'.
-  Property 'includes' is missing in type 'HobyModule'.
+
+src/app/gotowe/gotowe.component.ts(60,7): error 
+TS2322: Type 'WyksztalcenieModule' is not assignable to type 'WyksztalcenieModule[]'. Property 'includes' is missing in type 'WyksztalcenieModule'. src/app/gotowe/gotowe.component.ts(65,7): error TS2322: Type 'DoswiadczenieModule' is not assignable to type 'DoswiadczenieModule[]'. Property 'includes' is missing in type 'DoswiadczenieModule'. src/app/gotowe/gotowe.component.ts(70,7): error 
+TS2322: Type 'JezykModule' is not assignable to type 'JezykModule[]'. Property 'includes' is missing in type 'JezykModule'. src/app/gotowe/gotowe.component.ts(75,7): error 
+TS2322: Type 'CertyfikatModule' is not assignable to type 'CertyfikatModule[]'. Property 'includes' is missing in type 'CertyfikatModule'. src/app/gotowe/gotowe.component.ts(80,7): 
+error TS2322: Type 'HobyModule' is not assignable to type 'HobyModule[]'. Property 'includes' is missing in type 'HobyModule'. 
