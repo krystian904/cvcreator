@@ -1,25 +1,38 @@
-<p>
-  doswiadczenie works!
-</p>
-<h2> Dodaj wykształcenie</h2>
-<div>
+<div class="container-fluid col-sm margin5">
+  <div class="row">
+    <h2 class="text-center"> Dodaj wykształcenie</h2>
+</div>
 
-  <div class="for">
-    data zaczecia pracy:
-    <input type="text" name="" value="" #dataStart>
-    <br>
-    data data zakonczenia:
-    <input type="text" name="" value="" #dataKoniec>
-    <br>
+<div class="row">
+    <div class="col-sm-4">
+      data zaczecia pracy:
+    </div>
+    <div class="col-sm-4">
+      <input type="text" name="" value="" #dataStart>
+    </div>
+</div>
 
-    opis stanowiska:
-    <input type="text" name="" value="" #opis>
+<div class="row">
+    <div class="col-sm-4">
+      data data zakonczenia:
+    </div>
+    <div class="col-sm-4">
+      <input type="text" name="" value="" #dataKoniec>
+    </div>
+</div>
 
-  </div>
-  <div class="sub">
-    <button type="button" name="button" (click)="wyslji(dataStart.value , dataKoniec.value, opis.value)" >wyslji</button>
+<div class="row">
+    <div class="col-sm-4">
+      opis stanowiska:
+    </div>
+    <div class="col-sm-4">
+      <input type="text" name="" value="" #opis>
+    </div>
+</div>
 
-  </div>
+<div class="row">
+    <button type="button" name="button" class="btn btn-primary" (click)="wyslji(dataStart.value , dataKoniec.value, opis.value)" >wyslji</button>
+</div>
 
 
 </div>

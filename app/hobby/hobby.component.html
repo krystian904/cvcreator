@@ -1,15 +1,20 @@
-<p>
-  hobby works!
-</p>
+<div class="container-fluid col-sm margin5">
+  <div class="row">
+    <h2 class="text-center">dodaj hoby</h2>
+  </div>
 
-<h2>dodaj hoby</h2>
-<div class="form">
-  dodaj hoby:
-  <input type="text" name="" value="" #hoby>
+  <div class="row">
+      <div class="col-sm-4">
+        hoby:
+      </div>
+      <div class="col-sm-4">
+        <input type="text" name="" value="" #hoby>
+      </div>
+  </div>
 
 
-</div>
-<div class="sub">
-  <button type="button" name="button" (click)="wyslji(hoby.value)">wyslji</button>
+  <div class="row">
+    <button type="button" name="button" class="btn btn-primary" (click)="wyslji(hoby.value)">wyslji</button>
 
+  </div>
 </div>

@@ -1,24 +1,46 @@
-<p>
-  certyfikaty works!
-</p>
-<h2>dodaja certyfikat</h2>
-<div class="form">
-  doaj numer certyfikatu:
-  <input type="text" name="" value="" #nr>
-  <br>
-  podaj nazwe:
-  <input type="text" name="" value="" #nazwa>
-  <br>
 
-  podaj miejsce uzyskania:
-  <input type="text" name="" value="" #gdzie>
-  <br>
-  podaj date:
-  <input type="text" name="" value="" #data>
-
-
+<div class="container-fluid col-sm margin5">
+<div class="row">
+  <h2 class="text-center">dodaja certyfikaty:</h2>
 </div>
-<div class="sub">
-  <button type="button" name="button" (click)="wyslji(nr.value , nazwa.value , gdzie.value , data.value)"> wyslji</button>
+<div class="row margin5">
+  <div class="col-sm-4">
+    doaj numer certyfikatu:
+  </div>
+  <div class="col-sm-4">
+    <input type="text" name="" value="" #nr>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-4">
+  podaj nazwe:
+  </div>
+
+  <div class="col-sm-4">
+  <input type="text" name="" value="" #nazwa>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-4">
+  podaj miejsce uzyskania:
+  </div>
+  <div class="col-sm-4">
+  <input type="text" name="" value="" #gdzie>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-4">
+  podaj date:
+  </div>
+  <div class="col-sm-4">
+  <input type="text" name="" value="" #data>
+  </div>
+</div>
+
+<div class="row">
+  <button type="button" name="button" class="btn btn-primary" (click)="wyslji(nr.value , nazwa.value , gdzie.value , data.value)"> wyslji</button>
 
 </div>

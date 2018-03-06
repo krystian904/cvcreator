@@ -1,19 +1,36 @@
-<div>
-  <h2> Dodaj wykształcenie</h2>
- <div>
-  Data data zaczecia:
-  <input type="text" #dataStart>
- </div>
- <div>
-  Data zakończenia:
-  <input type="text" #dataKoniec>
- </div>
- <div>
-  nazwa:
-  <input type="text" #nazwa>
- </div>
-  <div class="btn">
-    <button (click)="wyslWyksztalcenie(dataStart.value , dataKoniec.value , nazwa.value)"> wyslji </button>
+<div class="container-fluid col-sm margin5">
+  <div class="row">
+    <h2 class="text-center">Dodaj wykształcenie</h2>
+  </div>
 
+  <div class="row">
+    <div class="col-sm-4">
+      Data data zaczecia:
+    </div>
+    <div class="col-sm-4">
+      <input type="text" #dataStart>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-4">
+      Data zakończenia:
+    </div>
+    <div class="col-sm-4">
+      <input type="text" #dataKoniec>
+    </div>
+ </div>
+
+ <div class="row">
+   <div class="col-sm-4">
+      nazwa:
+  </div>
+  <div class="col-sm-4">
+    <input type="text" #nazwa>
+  </div>
+ </div>
+
+  <div class="row">
+    <button class="btn btn-primary" (click)="wyslWyksztalcenie(dataStart.value , dataKoniec.value , nazwa.value)"> wyslji </button>
   </div>
 </div>

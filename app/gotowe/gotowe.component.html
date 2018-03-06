@@ -1,43 +1,177 @@
-<p>dziala gotowe</p>
+<div class="container-fluid col-sm margin5">
+  <div class="row">
+    <h2>{{dane.imie}}</h2>
+  </div>
 
-  <h2>dane osobowe :</h2>
-  <p> Imie Nazwisko: {{dane.imie}} </p>
-  <p> Adres: {{dane.adres}} </p>
-  <p> Email: {{dane.email}} </p>
-  <p> Telefon: {{dane.telefon}} </p>
+  <div class="row">
+    <div class="col-sm-4">
+      Adres:
+    </div>
+    <div class="col-sm-4">
+      {{dane.adres}}
+    </div>
+  </div>
 
-  <h2>cel</h2>
-  <p> cel: {{cel.text}} </p>
+  <div class="row">
+    <div class="col-sm-2">
+        Email:
+    </div>
+    <div class="col-sm-2">
+         {{dane.email}}
+    </div>
+  </div>
 
-  <h2>wyksztalcenie :</h2>
+  <div class="row">
+    <div class="col-sm-2">
+        Telefon:
+    </div>
+    <div class="col-sm-2">
+        {{dane.telefon}}
+    </div>
+  </div>
+
+  <div class="row">
+    <h2>cel</h2>
+  </div>
+  <div class="row">
+    <div class="col-sm-2">
+      cel:
+    </div>
+    <div class="col-sm-2">
+      {{cel.text}}
+    </div>
+  </div>
+
+  <div class="row">
+    <h2>wyksztalcenie :</h2>
+  <div class="row">
+
   <div class="wyksztalcenie" *ngFor="let rekord of wyksztalcenie">
-    <p> dataZaczecia : {{rekord.dataZaczecia}}</p>
-    <p> dataZakonczenia : {{rekord.dataSkonczenia}}</p>
-    <p> nazwaSzkoly : {{rekord.nazwaSzkoly}}</p>
+
+      <div class="col-sm-2">
+        dataZaczecia :
+      </div>
+      <div class="col-sm-2">
+        {{rekord.dataZaczecia}}
+
+    </div>
+
+    <div class="row">
+      <div class="col-sm-2">
+        dataZakonczenia :
+      </div>
+      <div class="col-sm-2">
+        {{rekord.dataSkonczenia}}
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-2">
+        nazwaSzkoly :
+      </div>
+      <div class="col-sm-2">
+        {{rekord.nazwaSzkoly}}
+      </div>
+    </div>
 
   </div>
 
+<div class="row">
  <h2>doswiadczenie :</h2>
+</div>
  <div class="doswiadczenie" *ngFor="let rekord of doswiadczenie">
-   <p> dataZaczecia : {{rekord.dataZaczecia}}</p>
-   <p> dataZakonczenia : {{rekord.dataSkonczenia}}</p>
-   <p> nazwa stanowiska : {{rekord.opis}}</p>
 
+     <div class="col-sm-2">
+       dataZaczecia :
+     </div>
+     <div class="col-sm-2">
+       {{rekord.dataZaczecia}}
+
+  </div>
+
+  <div class="row">
+    <div class="col-sm-2">
+       dataZakonczenia :
+    </div>
+    <div class="col-sm-2">
+        {{rekord.dataSkonczenia}}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-2">
+       nazwa stanowiska :
+    </div>
+    <div class="col-sm-2">
+        {{rekord.opis}}
+    </div>
+  </div>
  </div>
 
- <h2>jezyki :</h2>
- <div class="doswiadczenie" *ngFor="let rekord of jezyki">
-   <p> poziom : {{rekord.poziom}}</p>
-   <p> jezyk : {{rekord.nazwaJezyka}}</p>
+<div class="row">
+   <h2>jezyki :</h2>
+</div>
 
+ <div class="row" *ngFor="let rekord of jezyki">
+
+     <div class="col-sm-2">
+       poziom :
+    </div>
+    <div class="col-sm-2">
+       {{rekord.poziom}}
+
+    </div>
+</div>
+
+  <div class="row">
+    <div class="col-sm-2">
+       jezyk :
+    </div>
+    <div class="col-sm-2">
+      {{rekord.nazwaJezyka}}
+    </div>
 
  </div>
-
+ </div>
+<div class="row">
  <h2>certyfikaty :</h2>
- <div class="doswiadczenie" *ngFor="let rekord of certyfikaty">
-   <p> nr : {{rekord.nr}}</p>
-   <p> jezyk : {{rekord.nazwa}}</p>
-  <p> miesce zdania certyfikatu : {{rekord.gdzie}} </p>
-  <p> data zdania certyfikatu : {{rekord.data}} </p>
+</div>
+
+ <div class="row" *ngFor="let rekord of certyfikaty">
+
+     <div class="col-sm-2">
+        nr :
+    </div>
+      <div class="col-sm-2">
+        {{rekord.nr}}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-2">
+      jezyk :
+    </div>
+    <div class="col-sm-2">
+      {{rekord.nazwa}}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-2">
+      miesce zdania certyfikatu :
+    </div>
+    <div class="col-sm-2">
+      {{rekord.gdzie}}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-2">
+      data zdania certyfikatu :
+    </div>
+    <div class="col-sm-2">
+      {{rekord.data}}
+    </div>
+  </div>
 
  </div>

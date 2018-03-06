@@ -50,7 +50,7 @@ export class GotoweComponent implements OnInit {
     console.log(this.service.hobytOdczytPrawda());
 
 
-    /*if(this.service.daneOdczytPrawda()){
+    if(this.service.daneOdczytPrawda()){
       this.dane = this.service.daneOdczyt();
     }
     if(this.service.celOdczytPrawda()){
@@ -80,7 +80,7 @@ export class GotoweComponent implements OnInit {
       this.hoby = this.service.hobytOdczyt();
     }else{
       this.hoby =[];
-    }*/
+    }
 
   }
 

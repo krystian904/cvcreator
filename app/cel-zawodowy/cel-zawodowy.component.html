@@ -1,2 +1,13 @@
-cel <input type="text" #cel><br>
-<button (click)="zatwierdz(cel.value)"> zatwierdz </button>
+<div class="container-fluid col-sm margin5">
+<div class="row">
+<h2 class="text-center">dodaja cel zawodowy:</h2>
+</div>
+<div class="row margin5">
+  <div class="col-sm-4"><p class="fas fa-camera-retro">cel:</p></div>
+  <div class="col-sm-4"><input type="text" #cel></div>
+</div>
+
+<div class="row">
+<button class="btn btn-primary" (click)="zatwierdz(cel.value)" >zatwierdz </button>
+</div>
+</div>

@@ -1,8 +1,48 @@
-imie i Nazwisko : <input #imie> <br>
-Miejsce zamieszkania: <input #adres> <br>
-Adres email: <input #email> <br>
-telefon: <input #telefon> <br>
+<div class="container-fluid col-sm margin5">
+  <div class="row">
+    <h2 class="text-center">dodaja dane osobowe:</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-4">
+    imie i Nazwisko :
+  </div>
+  <div class="col-sm-4">
+    <input #imie>
+  </div>
+</div>
 
-<button type="button" name="button" (click)=
-  "zatwierdz(imie.value , adres.value , email.value
-  , telefon.value)"> zatwierdz</button>
+<div class="row">
+  <div class="col-sm-4">
+    Miejsce zamieszkania:
+  </div>
+
+  <div class="col-sm-4">
+    <input #adres>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-4">
+    Adres email:
+  </div>
+  <div class="col-sm-4">
+    <input #email>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-4">
+    telefon:
+  </div>
+    <div class="col-sm-4">
+      <input #telefon>
+    </div>
+</div>
+
+<div class="row">
+  <button type="button" name="button"
+  class="btn btn-primary"
+  (click)=
+    "zatwierdz(imie.value , adres.value , email.value
+    , telefon.value)"> zatwierdz</button>
+</div>
