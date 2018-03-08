@@ -13,19 +13,19 @@
   </div>
 
   <div class="row">
-    <div class="col-sm-2">
+    <div class="col-sm-4">
         Email:
     </div>
-    <div class="col-sm-2">
+    <div class="col-sm-4">
          {{dane.email}}
     </div>
   </div>
 
   <div class="row">
-    <div class="col-sm-2">
+    <div class="col-sm-4">
         Telefon:
     </div>
-    <div class="col-sm-2">
+    <div class="col-sm-4">
         {{dane.telefon}}
     </div>
   </div>
@@ -34,75 +34,75 @@
     <h2>cel</h2>
   </div>
   <div class="row">
-    <div class="col-sm-2">
+    <div class="col-sm-4">
       cel:
     </div>
-    <div class="col-sm-2">
+    <div class="col-sm-4">
       {{cel.text}}
     </div>
   </div>
 
   <div class="row">
     <h2>wyksztalcenie :</h2>
-  <div class="row">
+  </div>
 
   <div class="wyksztalcenie" *ngFor="let rekord of wyksztalcenie">
 
-      <div class="col-sm-2">
+      <div class="col-sm-4">
         dataZaczecia :
       </div>
-      <div class="col-sm-2">
+      <div class="col-sm-4">
         {{rekord.dataZaczecia}}
 
     </div>
 
     <div class="row">
-      <div class="col-sm-2">
+      <div class="col-sm-4">
         dataZakonczenia :
       </div>
-      <div class="col-sm-2">
+      <div class="col-sm-4">
         {{rekord.dataSkonczenia}}
       </div>
     </div>
 
     <div class="row">
-      <div class="col-sm-2">
+      <div class="col-sm-4">
         nazwaSzkoly :
       </div>
-      <div class="col-sm-2">
+      <div class="col-sm-4">
         {{rekord.nazwaSzkoly}}
       </div>
     </div>
 
   </div>
-
+<br>
 <div class="row">
  <h2>doswiadczenie :</h2>
 </div>
  <div class="doswiadczenie" *ngFor="let rekord of doswiadczenie">
 
-     <div class="col-sm-2">
+     <div class="col-sm-4">
        dataZaczecia :
      </div>
-     <div class="col-sm-2">
+     <div class="col-sm-4">
        {{rekord.dataZaczecia}}
 
   </div>
 
   <div class="row">
-    <div class="col-sm-2">
+    <div class="col-sm-4">
        dataZakonczenia :
     </div>
-    <div class="col-sm-2">
+    <div class="col-sm-4">
         {{rekord.dataSkonczenia}}
     </div>
   </div>
 
   <div class="row">
-    <div class="col-sm-2">
+    <div class="col-sm-4">
        nazwa stanowiska :
     </div>
-    <div class="col-sm-2">
+    <div class="col-sm-4">
         {{rekord.opis}}
     </div>
   </div>
@@ -114,64 +114,62 @@
 
  <div class="row" *ngFor="let rekord of jezyki">
 
-     <div class="col-sm-2">
+     <div class="col-sm-4">
        poziom :
     </div>
-    <div class="col-sm-2">
+    <div class="col-sm-4">
        {{rekord.poziom}}
 
     </div>
 </div>
 
   <div class="row">
-    <div class="col-sm-2">
+    <div class="col-sm-4">
        jezyk :
     </div>
-    <div class="col-sm-2">
+    <div class="col-sm-4">
       {{rekord.nazwaJezyka}}
     </div>
 
  </div>
- </div>
+
 <div class="row">
  <h2>certyfikaty :</h2>
 </div>
 
  <div class="row" *ngFor="let rekord of certyfikaty">
 
-     <div class="col-sm-2">
+     <div class="col-sm-4">
         nr :
     </div>
-      <div class="col-sm-2">
+      <div class="col-sm-4">
         {{rekord.nr}}
     </div>
   </div>
 
   <div class="row">
-    <div class="col-sm-2">
+    <div class="col-sm-4">
       jezyk :
     </div>
-    <div class="col-sm-2">
+    <div class="col-sm-4">
       {{rekord.nazwa}}
     </div>
   </div>
 
   <div class="row">
-    <div class="col-sm-2">
+    <div class="col-sm-4">
       miesce zdania certyfikatu :
     </div>
-    <div class="col-sm-2">
+    <div class="col-sm-4">
       {{rekord.gdzie}}
     </div>
   </div>
 
   <div class="row">
-    <div class="col-sm-2">
+    <div class="col-sm-4">
       data zdania certyfikatu :
     </div>
-    <div class="col-sm-2">
+    <div class="col-sm-4">
       {{rekord.data}}
     </div>
   </div>
-
- </div>

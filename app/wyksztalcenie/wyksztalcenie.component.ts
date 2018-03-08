@@ -16,8 +16,9 @@ export class WyksztalcenieComponent implements OnInit {
 
   }
 
-  wyslWyksztalcenie(dataStart: string , dataKoniec: string , opis){
+  wyslWyksztalcenie(dataStart: string , dataKoniec: string , opis: string){
     this.service.wyksztalcenieWyslji(new WyksztalcenieModule(dataStart,dataKoniec,opis));
+    console.log("wyslWyksztalcenie(dataStart: string , dataKoniec: string , opis");
   }
 
 }

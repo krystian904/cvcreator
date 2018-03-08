@@ -95,7 +95,7 @@ export class CvDoumentService {
     console.log(this.wyksztalcenie.length);
   }
 
-  wyksztalcenieOdczyt(): WyksztalcenieModule  {
+  wyksztalcenieOdczyt(): WyksztalcenieModule[]  {
     return JSON.parse(localStorage.getItem('wyksztalcenie'));
 
   }
@@ -121,7 +121,7 @@ export class CvDoumentService {
     // console.log(this.doswiadczenie.length);
   }
 
-  doswiadczenieOdczyt (): DoswiadczenieModule  {
+  doswiadczenieOdczyt (): DoswiadczenieModule[]  {
     return JSON.parse(localStorage.getItem('doswiadczenie'));
 
   }
@@ -146,7 +146,7 @@ export class CvDoumentService {
     console.log(this.jezyki.length);
   }
 
-  jezykOdczyt (): JezykModule {
+  jezykOdczyt (): JezykModule[] {
     return JSON.parse(localStorage.getItem('jezyk'));
 
   }
@@ -172,7 +172,7 @@ export class CvDoumentService {
     console.log(this.certyfikaty.length);
   }
 
-  certyfikatOdczyt(): CertyfikatModule  {
+  certyfikatOdczyt(): CertyfikatModule[]  {
     return JSON.parse(localStorage.getItem('certyfikat'));
 
   }
@@ -197,7 +197,7 @@ export class CvDoumentService {
     console.log(this.hoby.length);
   }
 
-  hobytOdczyt(): HobyModule  {
+  hobytOdczyt(): HobyModule[]  {
     return JSON.parse(localStorage.getItem('hoby'));
 
   }

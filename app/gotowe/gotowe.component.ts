@@ -19,11 +19,11 @@ export class GotoweComponent implements OnInit {
 
   dane: DaneModule;
   cel: CelModule;
-  wyksztalcenie: WyksztalcenieModule[] = [];
-  doswiadczenie: DoswiadczenieModule[] = [];
-  jezyki: JezykModule[] = [];
-  certyfikaty: CertyfikatModule[] = [];
-  hoby: HobyModule[] = [];
+  wyksztalcenie: WyksztalcenieModule[];
+  doswiadczenie: DoswiadczenieModule[];
+  jezyki: JezykModule[] ;
+  certyfikaty: CertyfikatModule[];
+  hoby: HobyModule[] ;
 
   constructor(private service: CvDoumentService) {
 
