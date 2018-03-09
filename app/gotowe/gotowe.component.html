@@ -121,7 +121,7 @@
        {{rekord.poziom}}
 
     </div>
-</div>
+
 
   <div class="row">
     <div class="col-sm-4">
@@ -132,29 +132,23 @@
     </div>
 
  </div>
+</div>
+
 
 <div class="row">
  <h2>certyfikaty :</h2>
 </div>
 
- <div class="row" *ngFor="let rekord of certyfikaty">
+ <div *ngFor="let rekord of certyfikaty">
 
+  <div class="row">
      <div class="col-sm-4">
         nr :
     </div>
       <div class="col-sm-4">
         {{rekord.nr}}
     </div>
-  </div>
-
-  <div class="row">
-    <div class="col-sm-4">
-      jezyk :
-    </div>
-    <div class="col-sm-4">
-      {{rekord.nazwa}}
-    </div>
-  </div>
+</div>
 
   <div class="row">
     <div class="col-sm-4">
@@ -173,3 +167,4 @@
       {{rekord.data}}
     </div>
   </div>
+</div>
